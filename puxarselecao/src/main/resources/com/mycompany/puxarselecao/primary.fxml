@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="225.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.puxarselecao.PrimaryController">
+   <children>
+      <RadioButton fx:id="r1" layoutX="69.0" layoutY="135.0" mnemonicParsing="false" onAction="#clickr1" text="maca">
+         <toggleGroup>
+            <ToggleGroup fx:id="frutas" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="r2" layoutX="69.0" layoutY="152.0" mnemonicParsing="false" onAction="#clickr2" text="banana" toggleGroup="$frutas" />
+      <RadioButton fx:id="r3" layoutX="69.0" layoutY="169.0" mnemonicParsing="false" onAction="#clickr3" text="melancia" toggleGroup="$frutas" />
+      <RadioButton fx:id="r4" layoutX="69.0" layoutY="186.0" mnemonicParsing="false" onAction="#clickr4" text="morango" toggleGroup="$frutas" />
+      <Button fx:id="btn" layoutX="87.0" layoutY="236.0" mnemonicParsing="false" onAction="#clickbtn" text="Button" />
+   </children>
+</Pane>
